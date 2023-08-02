@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+
+body {
+  background-color: aliceblue;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.status-bar__column {
+  margin: 5px 3px;
+}
+
+.welcome-header {
+  background-color: white;
+  margin-top: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.5;
+}
+
+.welcome-form {
+  background-color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-form form {
+  display: flex;
+  flex-direction: column;
+}
