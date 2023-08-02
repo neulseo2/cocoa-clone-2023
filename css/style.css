@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
 @import "status-bar.css";
+@import "variables.css";
 
 body {
-  background-color: aliceblue;
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,7 +13,7 @@ body {
 }
 
 .welcome-header {
-  background-color: white;
+  /* background-color: white; */
   margin-top: 90px;
   text-align: center;
   display: flex;
@@ -30,7 +31,7 @@ body {
 }
 
 .welcome-form {
-  background-color: white;
+  background-color: none;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -42,4 +43,41 @@ body {
 .welcome-form form {
   display: flex;
   flex-direction: column;
+  width: 300px;
+}
+
+.welcome-form input {
+  color: none;
+  padding: 15px 3px;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.welcome-form input:not([type="submit"]) {
+  border-bottom: 1px solid darkgrey;
+  opacity: 0.8;
+  transition: border-color .2s ease-in-out;
+}
+
+.welcome-form input:focus {
+  border-color: var(--yellow);
+}
+
+.welcome-form input::placeholder {
+  color: darkgrey;
+  opacity: 0.8;
+}
+
+.welcome-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.welcome-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
 }
