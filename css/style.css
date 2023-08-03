@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+
 
 body {
   background-color: white;
@@ -54,28 +61,28 @@ body {
   margin-bottom: 20px;
 }
 
-.welcome-form input:not([type="submit"]) {
+.welcome-form__input:not([type="submit"]) {
   border-bottom: 1px solid darkgrey;
   opacity: 0.8;
   transition: border-color .2s ease-in-out;
 }
 
-.welcome-form input:focus {
+.welcome-form__input:focus {
   border-color: var(--yellow);
 }
 
-.welcome-form input::placeholder {
+.welcome-form__input::placeholder {
   color: darkgrey;
   opacity: 0.8;
 }
 
-.welcome-form input[type="submit"] {
+.welcome-form__btn {
   background-color: var(--yellow);
   cursor: pointer;
   border-radius: 5px;
 }
 
-.welcome-form a {
+.welcome-form__a {
   text-align: center;
   text-decoration: none;
   color: inherit;
