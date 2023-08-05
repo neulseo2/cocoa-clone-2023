@@ -1,0 +1,69 @@
+.welcome-header {
+  /* background-color: white; */
+  margin-top: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.5;
+}
+
+.welcome-form {
+  background-color: none;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.welcome-form input {
+  color: none;
+  padding: 15px 3px;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.welcome-form__input:not([type="submit"]) {
+  border-bottom: 1px solid darkgrey;
+  opacity: 0.8;
+  transition: border-color .2s ease-in-out;
+}
+
+.welcome-form__input:focus {
+  border-color: var(--yellow);
+}
+
+.welcome-form__input::placeholder {
+  color: darkgrey;
+  opacity: 0.8;
+}
+
+.welcome-form__btn {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.welcome-form__a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
