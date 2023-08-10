@@ -1,6 +1,7 @@
 .user-component {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .user-component,
@@ -20,8 +21,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: pink;
+  margin-left: 10px;
 }
-
 
 .user-component__subtitle {
   margin-top: 8px;
@@ -30,7 +31,15 @@
 }
 
 .user-component__avatar--sm {
-  width: 68px;
-  height: 68px;
+  width: 62px;
+  height: 62px;
   border-radius: 20px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 500;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
