@@ -1,0 +1,36 @@
+.user-component {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__avatar--xl {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+}
+
+.user-component__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: pink;
+}
+
+
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 7px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--sm {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+}

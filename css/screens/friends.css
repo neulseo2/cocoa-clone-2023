@@ -6,8 +6,13 @@
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding-top: 7px;
+  margin-bottom: 10px;
 }
 
 #fridns-display-link:last-child {
   margin: 0px 10px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
 }
