@@ -32,8 +32,8 @@
 .nav__dot {
   background-color: tomato;
   color: white;
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   overflow-x: visible;
   position: fixed;

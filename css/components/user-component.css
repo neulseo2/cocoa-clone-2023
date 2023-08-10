@@ -7,7 +7,12 @@
 .user-component,
 .user-component__column:first-child {
   display: flex;
-  align-items: center;
+}
+
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 19px;
 }
 
 .user-component__avatar--xl {
@@ -20,13 +25,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: pink;
   margin-left: 10px;
+}
+
+.user-component__title {
+  padding-top: 7px;
 }
 
 .user-component__subtitle {
   margin-top: 8px;
-  font-size: 7px;
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -38,8 +46,25 @@
 
 .user-component__title--not-bold {
   font-weight: 500;
+  padding-top: 0px;
 }
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-component__notification {
+  background-color: tomato;
+  color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
